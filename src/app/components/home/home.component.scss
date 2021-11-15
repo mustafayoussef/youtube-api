@@ -1,0 +1,10 @@
+table {
+  width: 100%;
+  .details:hover {
+    background-color: red;
+    color: white;
+  }
+}
+::ng-deep tbody tr:hover {
+  background: whitesmoke;
+}

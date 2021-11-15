@@ -1,0 +1,49 @@
+<div class="details">
+    <div class="image">
+        <img [src]="img" alt="" srcset="">
+    </div>
+    <div class="video-details">
+        <mat-list role="list">
+            <mat-list-item role="listitem">
+                <div class="title">
+                    <h2>{{title}}</h2>
+                    <button mat-raised-button color="accent" class="favorite">Add to favorite</button>
+                </div>
+            </mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item role="listitem">
+                <div class="video-data">
+                    <div class="rating">
+                        <span class="des-title">Rate Now</span>
+                        <ngx-star-rating [(ngModel)]="rating" [id]="'rating3'" (change)="change(rating)"></ngx-star-rating >
+                    </div>
+                    <div class="duration">
+                        <span class="des-title">Duration</span>
+                        <span>{{duration}}</span>
+                    </div>
+                    <div class="statistics">
+                        <div class="view">
+                            <span class="des-title">{{view}}</span>
+                            <mat-icon>visibility</mat-icon>
+                        </div>
+                        <div class="like">
+                            <span class="des-title">{{like}}</span>
+                            <mat-icon>thumb_up</mat-icon>
+                        </div>
+                    </div>
+                </div>
+            </mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item role="listitem">
+                <div class="desc">
+                    <div class="date">
+                        <span>Published on {{publishedAt}}</span>
+                    </div>
+                    <div class="description">
+                        <p>{{description}}</p>
+                    </div>
+                </div>
+            </mat-list-item>
+        </mat-list>
+    </div>
+</div>

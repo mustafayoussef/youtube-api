@@ -1,0 +1,30 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+.mat-toolbar {
+  background-color: white;
+  .logo {
+    width: 130px;
+    margin-top: 10px;
+    cursor: pointer;
+    img {
+      width: 100%;
+    }
+  }
+  ::ng-deep .mat-form-field-flex {
+    flex-direction: row-reverse;
+    border-radius: 43px;
+    mat-icon {
+      margin-right: 15px;
+    }
+  }
+}
+::ng-deep .mat-form-field-wrapper {
+  padding: 0;
+}
+::ng-deep .mat-form-field-underline {
+  display: none !important;
+}
+::ng-deep .mat-form-field-ripple {
+  display: none !important;
+}
